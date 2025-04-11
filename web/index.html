@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microscope Conversion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <h1>Microscope Size to Real Life Size</h1>
+
+        <div class="form-field">
+          <label for="username">Enter your username</label>
+          <input name="username" id="username" required />
+        </div>
+
+        <div class="form-field">
+          <label for="microscopeSize">Microscope Size (μm)</label>
+          <input
+            type="number"
+            name="microscopeSize"
+            id="microscopeSize"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="magnification">Magnification Coefficient</label>
+          <input
+            type="number"
+            name="magnification"
+            id="magnification"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="originalSize">Original Size (μm)</label>
+          <input type="number" name="originalSize" id="originalSize" readonly />
+        </div>
+
+        <button type="submit" id="calculateBtn">Calculate</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
