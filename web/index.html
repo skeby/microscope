@@ -17,7 +17,7 @@
         </div>
 
         <div class="form-field">
-          <label for="microscopeSize">Microscope Size (μm)</label>
+          <label for="microscopeSize">Microscope Size</label>
           <input
             type="number"
             name="microscopeSize"
@@ -37,12 +37,36 @@
         </div>
 
         <div class="form-field">
-          <label for="originalSize">Original Size (μm)</label>
+          <label for="originalSize">Original Size</label>
           <input type="number" name="originalSize" id="originalSize" readonly />
         </div>
 
         <button type="submit" id="calculateBtn">Calculate</button>
       </form>
+      <div id="table-container">
+        <h2 style="margin-bottom: 10px">Submissions</h2>
+        <table
+          id="entries-table"
+          style="width: 100%; border-collapse: collapse; text-align: left"
+        >
+          <thead>
+            <tr style="background-color: #eee">
+              <th style="padding: 10px; border: 1px solid #ccc">Username</th>
+              <th style="padding: 10px; border: 1px solid #ccc">
+                Microscope Size
+              </th>
+              <th style="padding: 10px; border: 1px solid #ccc">
+                Magnification
+              </th>
+              <th style="padding: 10px; border: 1px solid #ccc">
+                Original Size
+              </th>
+              <th style="padding: 10px; border: 1px solid #ccc">Date</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
     </main>
 
     <script src="script.js"></script>
